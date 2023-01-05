@@ -30,7 +30,7 @@ fake_users_db = {
 }
 
 # Connect to the database
-cnx = mysql.connector.connect(user='root', password='Dhakar@0143', host='127.0.0.1', database='ToDOList')
+cnx =  mysql.connector.connect(user='root', password='password', host='127.0.0.1', database='ToDOList')
 cursor = cnx.cursor()
 
 # Create the to-do list table
@@ -144,7 +144,7 @@ async def get_current_active_user(current_user: User = Depends(get_current_user)
 # Retrieve all to-do list items
 def read_items():
     # Connect to the database
-    cnx = mysql.connector.connect(user='root', password='Dhakar@0143', host='127.0.0.1', database='ToDoList')
+    cnx =  mysql.connector.connect(user='root', password='password', host='127.0.0.1', database='ToDOList')
     cursor = cnx.cursor()
 
     # Retrieve all to-do list items
@@ -163,7 +163,7 @@ def read_items():
 # Retrieve a specific to-do list item
 def read_item(id):
     # Connect to the database
-    cnx = mysql.connector.connect(user='root', password='Dhakar@0143', host='127.0.0.1', database='ToDoList')
+    cnx =  mysql.connector.connect(user='root', password='password', host='127.0.0.1', database='ToDOList')
     cursor = cnx.cursor()
 
     # Retrieve the to-do list item
@@ -182,7 +182,7 @@ def read_item(id):
 # Create a new to-do list item
 def create_item(item: Item):
     # Connect to the database
-    cnx = mysql.connector.connect(user='root', password='Dhakar@0143', host='127.0.0.1', database='ToDoList')
+    cnx =  mysql.connector.connect(user='root', password='password', host='127.0.0.1', database='ToDOList')
     cursor = cnx.cursor()
 
     # Insert the new to-do list item
@@ -200,7 +200,7 @@ def create_item(item: Item):
 # Update an existing to-do list item
 def update_item(id, item: Item):
     # Connect to the database
-    cnx = mysql.connector.connect(user='root', password='Dhakar@0143', host='127.0.0.1', database='ToDoList')
+    cnx =  mysql.connector.connect(user='root', password='password', host='127.0.0.1', database='ToDOList')
     cursor = cnx.cursor()
 
     # Update the to-do list item
@@ -219,7 +219,7 @@ def update_item(id, item: Item):
 # Delete an existing to-do list item
 def delete_item(id):
     # Connect to the database
-    cnx = mysql.connector.connect(user='root', password='Dhakar@0143', host='127.0.0.1', database='ToDoList')
+    cnx =  mysql.connector.connect(user='root', password='password', host='127.0.0.1', database='ToDOList')
     cursor = cnx.cursor()
 
     # Delete the to-do list item
